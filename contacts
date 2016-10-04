@@ -10,6 +10,13 @@ IFS=$'\n';
 overwrite=false;
 count=0;
 
+
+function create_db() {
+	if [ ! -f $database ]; then
+		touch $database;
+	fi
+}
+
 function save_to_db() {
         if $overwrite; then
                 query_db;
@@ -80,6 +87,8 @@ function query_db() {
         fi
 
 }
+
+create_db
 
 case "$1" in
         read)
