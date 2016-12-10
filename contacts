@@ -1,9 +1,5 @@
 #!/bin/bash
 # ************* contacts.sh ************
-# Name: Sulav Regmi
-# ID: 50211843
-# Unix Systems Programming
-# Dr. Jeff Jenness
 
 database='database';
 IFS=$'\n';
